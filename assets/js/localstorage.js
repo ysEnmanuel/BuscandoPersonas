@@ -1,4 +1,4 @@
-const btnSwitch = document.querySelector('#botondark');
+/*const btnSwitch = document.querySelector('#botondark');
 
 btnSwitch.addEventListener('click', () => {
     document.getElementById('id-sun').classList.toggle('activo')
@@ -20,4 +20,4 @@ if(localStorage.getItem('oscuro-mode') === 'true'){
     document.getElementById('id-moon').classList.add('activo')
 } else {
 	document.body.classList.remove('oscuro');
-}
+}*/

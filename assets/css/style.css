@@ -1411,7 +1411,9 @@ section {
   background: #13BC6B;
 }
 
-.botondark {
+/* Dark Mode */
+
+/*.botondark {
   color: #fff;
   background-color: #343a40;
   margin-left: 25px;
@@ -1616,7 +1618,7 @@ section {
 
 .oscuro .mobile-nav a {
   color: rgb(189, 189, 189);
-}
+}*/
 
 
 .team .member img {
