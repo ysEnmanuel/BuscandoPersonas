@@ -688,7 +688,6 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   margin-left: 9px;
-  color: #00ff84;
   text-align: center;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -703,6 +702,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  color: #00ff84;
 }
 
 .services .icon-box .icon i {
@@ -727,13 +727,14 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #eaecef;
+  border-color: #efeaea;
+  transition: all 0.3s;
+  transform: scale(1.05);
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover h4{
   color: #16df7e;
 }
-
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1627,12 +1628,6 @@ section {
 
 .team .member {
   border-radius: 25px;
-}
-
-.services .icon-box:hover {
-  color: #206bfb;
-  transition: all 0.3s;
-  transform: scale(1.05);
 }
 
 .raw {
