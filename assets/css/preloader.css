@@ -1,73 +1,55 @@
-@media (max-width: 768px) {
-  .centrado{
-    z-index: 1000;
-    width: 768px;
-    height: 100vh;
-    background-color:#ffff;
-    position: fixed;
-  }
-}
-.centrado{
+.centrado {
   z-index: 1000;
   width: 100%;
   height: 100vh;
-  background-color:#ffff;
+  background-color: #fff;
   position: fixed;
 }
+
+@media (max-width: 768px) {
+  .centrado {
+    width: 768px;
+  }
+}
+
 .loader {
-  text-align: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 50px;
   line-height: 50px;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 49%;
-  transform: translate(-50%, -50%);
   font-family: helvetica, arial, sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   color: #16df7e;
   letter-spacing: 0.2em;
 }
-.loader::before, .loader::after {
+
+.loader::before,
+.loader::after {
   content: "";
   display: block;
   width: 15px;
   height: 15px;
   background: #16df7e;
   position: absolute;
-  -webkit-animation: load 0.7s infinite alternate ease-in-out;
-          animation: load 0.7s infinite alternate ease-in-out;
-  left: -30px;
+  animation: load 0.7s infinite alternate ease-in-out;
 }
+
 .loader::before {
   top: 0;
 }
+
 .loader::after {
   bottom: 0;
-}
-
-@-webkit-keyframes load {
-  0% {
-    left: -25px;
-    height: 30px;
-    width: 100%;
-  }
-  50% {
-    height: 8px;
-    width: 100%;
-  }
-  100% {
-    left: 317px;
-    height: 30px;
-    width: 100%;
-  }
+  left: -30px;
 }
 
 @keyframes load {
   0% {
-    left: -25apx;
+    left: -25px;
     height: 30px;
     width: 15px;
   }
