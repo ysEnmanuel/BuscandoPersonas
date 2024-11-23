@@ -690,11 +690,11 @@ section {
   margin-left: 9px;
   color: #00ff84;
   text-align: center;
-  border: 1px solid #fff;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 25px;
+  border: 2px solid #cdd1d9
 }
 
 .services .icon-box .icon {
@@ -1632,7 +1632,7 @@ section {
 .services .icon-box:hover {
   color: #206bfb;
   transition: all 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .raw {
