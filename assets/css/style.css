@@ -5,16 +5,44 @@
 * License: https://bootstrapmade.com/license/
 */
 
+:root {
+  /* Colors */
+  --primary-color: #16df7e;
+  --primary-hover: #206bfb;
+  --text-color: #444444;
+  --text-light: #5f687b;
+  --white: #fff;
+  --black: #000;
+  --header-shadow: rgba(0, 0, 0, 0.1);
+  --dark-bg: #18191a;
+  --dark-secondary: #242526;
+  --dark-tertiary: #3a3b3c;
+  
+  /* Transitions */
+  --transition-normal: all 0.3s ease-in-out;
+  --transition-slow: all 0.4s;
+  
+  /* Font Families */
+  --font-primary: "Open Sans", sans-serif;
+  --font-headers: "Raleway", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  
+  /* Spacing */
+  --section-padding: 60px 0;
+  --header-padding: 20px 0;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family: var(--font-primary);
+  color: var(--text-color);
 }
 
 a {
-  color: #14c871;
+  color: var(--primary-color);
+  transition: var(--transition-normal);
 }
 
 .mobile-nav a {
@@ -22,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: #0059ff;
+  color: var(--primary-hover);
   text-decoration: none;
 }
 
@@ -32,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-headers);
 }
 
 /*--------------------------------------------------------------
@@ -54,28 +82,29 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background: #16df7e;
-  color: #fff;
-  transition: all 0.4s;
+  background: var(--primary-color);
+  color: var(--white);
+  transition: var(--transition-slow);
 }
 
 .back-to-top i:hover {
-  background: #206bfb;
-  color: #fff;
+  background: var(--primary-hover);
+  color: var(--white);
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: var(--white);
   z-index: 997;
-  padding: 20px 0;
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  padding: var(--header-padding);
+  box-shadow: 0px 2px 15px var(--header-shadow);
+  transition: var(--transition-normal);
 }
 
 #header.header-scrolled {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px var(--header-shadow);
   padding: 12px 0;
 }
 
@@ -126,7 +155,7 @@ h6 {
   display: block;
   position: relative;
   color: #5f687b;
-  transition: 0.3s;
+  transition: 1s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
@@ -837,7 +866,7 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid #fff;
+  border: 6px solid var(--white);
 }
 
 .testimonials .testimonial-item h3 {
@@ -955,12 +984,15 @@ section {
   text-align: center;
   margin-bottom: 20px;
   padding: 0px 0px;
-  background: #fff;
+  background: var(--white);
+  border-radius: 25px;
 }
 
 .team .member img {
   max-width: 100%;
   margin: 0 0 30px 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .team .member h4 {
@@ -1371,7 +1403,7 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #16df7e;
+  background: var(--primary-color);
 }
 
 /* Handle on hover */
@@ -1413,8 +1445,8 @@ section {
 .btn-mode {
   display: inline-block;
   width: 43px;
-  height: 37px;
-  border: 2px solid black;
+  height: 38px;
+  border: 1px solid black;
   transition: background-color .5s;
 }
 

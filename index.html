@@ -2,101 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Pagina web creada para trabajo de investigaciones">
+  <!-- Essential Meta Tags -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina web creada para trabajo de investigaciones">
   <title>Buscando Personas</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <link rel="stylesheet" href="assets/css/preloader.css">
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <style type="text/css">
-    * {
-      box-sizing: border-box;
-    }
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://site-assets.fontawesome.com">
+  
+  <!-- Critical CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/preloader.css" rel="stylesheet">
+  
+  <!-- Defer Non-Critical CSS -->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" media="print" onload="this.media='all'">
+
+  <!-- Inline Critical Styles -->
+  <style>
+    * { box-sizing: border-box; }
     .slider {
       width: 80%;
       margin: 100px auto;
     }
-
     .slick-slide {
       margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-    .oscuro .slick-next:before {
-      color: white;
-    }
-
-    .slick-slide {
       transition: all ease-in-out .3s;
     }
-
+    .slick-slide img { width: 100%; }
+    .slick-prev:before,
+    .slick-next:before { color: black; }
+    .oscuro .slick-next:before { color: white; }
     @media (max-width: 768px) {
-      .slider {
-        width: 90%;
-      }
+      .slider { width: 90%; }
     }
   </style>
 </head>
+
 
 <body style="font-size: 1rem;" class="hiden" id="my-scrollbar">
   <div class="centrado">
     <div class="loader">buscandopersonas.org</div>
   </div>
   <div id="WAButton"></div>
-  <!-- Load Facebook SDK for JavaScript -->
+  <!-- Facebook Integration -->
   <div id="fb-root"></div>
   <script>
-    window.fbAsyncInit = function () {
+    window.fbAsyncInit = function() {
       FB.init({
         xfbml: true,
         version: 'v9.0'
       });
     };
 
-    (function (d, s, id) {
+    // Load Facebook SDK asynchronously
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s);
       js.id = id;
       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      js.async = true;
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution="setup_tool" page_id="354337154593213" theme_color="#16df7e"
-    logged_in_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?"
-    logged_out_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?">
+  <div class="fb-customerchat" 
+       attribution="setup_tool" 
+       page_id="354337154593213" 
+       theme_color="#16df7e"
+       logged_in_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?"
+       logged_out_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?">
   </div>
 
 
@@ -1768,104 +1755,56 @@
         Designed by <a href="https://ysenmanuel.github.io/Web/" target="_blank">Enmanuel</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <!-- Core Dependencies -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <!--Floating WhatsApp css-->
-  <link rel="stylesheet" href="assets/css/floating-wpp.min.css">
-  <!--Floating WhatsApp javascript-->
-  <script type="text/javascript" src="assets/js/floating-wpp.min.js"></script>
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/wb.js"></script>
-  <script src="assets/js/dialog.js"></script>
-  <script src="assets/js/localstorage.js"></script>
-  <!-- Slick :D -->
-  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-  <!-- ScrollReveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function () {
-      $(".vertical-center-4").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 4,
-        slidesToScroll: 2
-      });
-      $(".vertical-center-3").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".vertical-center-2").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 2
-      });
-      $(".vertical-center").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-      });
-      $(".vertical").slick({
-        dots: true,
-        vertical: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
+
+  <!-- Deferred Scripts -->
+  <script defer src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script defer src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script defer src="assets/vendor/counterup/counterup.min.js"></script>
+  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script defer src="assets/vendor/venobox/venobox.min.js"></script>
+  <script defer src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script defer src="./slick/slick.js"></script>
+  <script defer src="assets/js/wb.js"></script>
+  <script defer src="assets/js/dialog.js"></script>
+  <script defer src="assets/js/localstorage.js"></script>
+  <script defer src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="assets/js/smoothscroll.js"></script>
+
+  <!-- WhatsApp Integration -->
+  <link rel="stylesheet" href="assets/css/floating-wpp.min.css">
+  <script defer src="assets/js/floating-wpp.min.js"></script>
+
+  <!-- Initialize Components -->
+  <script>
+    // Document Ready Handler
+    $(function() {
+      // Hide preloader
+      setTimeout(() => {
+        $('.centrado').hide('fast');
+        $('body').removeClass('hiden');
+      }, 1500);
+
+      // Initialize scrollbar
+      if (window.Scrollbar) {
+        Scrollbar.init(document.querySelector('#my-scrollbar'));
+      }
+
+      // Initialize slick carousel
       $(".regular").slick({
         dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3
       });
-      $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true
-      });
-      $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
-      });
     });
-  </script>
-  </script>
-  <script type="text/javascript">
-    $(function () { //Cuando está listo el documento
-      setTimeout(function () {
-        $('.centrado').hide('fast');
-        $('body').removeClass('hiden'); //quitar el cover
-      }, 1500); //Después de 5s ocultar el preload
-    });
-  </script>
-  <script src="/assets/js/smoothscroll.js"></script>
-  <script>
-    var Scrollbar = window.Scrollbar;
-
-    Scrollbar.init(document.querySelector('#my-scrollbar'));
   </script>
 </body>
-
 </html>
