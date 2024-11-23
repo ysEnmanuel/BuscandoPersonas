@@ -693,7 +693,8 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 25px;
-  border: 2px solid #cdd1d9
+  border: 2px solid #cdd1d9;
+  cursor: pointer;
 }
 
 .services .icon-box .icon {
@@ -732,7 +733,7 @@ section {
   transform: scale(1.05);
 }
 
-.services .icon-box:hover h4{
+.services .icon-box:hover h4 {
   color: #16df7e;
 }
 
