@@ -15,37 +15,57 @@
   <!-- Preload Critical Resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://site-assets.fontawesome.com">
-  
+
   <!-- Critical CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/preloader.css" rel="stylesheet">
-  
+
   <!-- Defer Non-Critical CSS -->
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css" media="print" onload="this.media='all'">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css" media="print"
+    onload="this.media='all'">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" onload="this.media='all'">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" media="print"
+    onload="this.media='all'">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" media="print" onload="this.media='all'">
 
   <!-- Inline Critical Styles -->
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     .slider {
       width: 80%;
       margin: 100px auto;
     }
+
     .slick-slide {
       margin: 0px 20px;
       transition: all ease-in-out .3s;
     }
-    .slick-slide img { width: 100%; }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
     .slick-prev:before,
-    .slick-next:before { color: black; }
-    .oscuro .slick-next:before { color: white; }
+    .slick-next:before {
+      color: black;
+    }
+
+    .oscuro .slick-next:before {
+      color: white;
+    }
+
     @media (max-width: 768px) {
-      .slider { width: 90%; }
+      .slider {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -59,7 +79,7 @@
   <!-- Facebook Integration -->
   <div id="fb-root"></div>
   <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
         version: 'v9.0'
@@ -67,7 +87,7 @@
     };
 
     // Load Facebook SDK asynchronously
-    (function(d, s, id) {
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s);
@@ -78,12 +98,9 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <div class="fb-customerchat" 
-       attribution="setup_tool" 
-       page_id="354337154593213" 
-       theme_color="#16df7e"
-       logged_in_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?"
-       logged_out_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?">
+  <div class="fb-customerchat" attribution="setup_tool" page_id="354337154593213" theme_color="#16df7e"
+    logged_in_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?"
+    logged_out_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?">
   </div>
 
   <!-- ======= Header ======= -->
@@ -285,16 +302,17 @@
             <div class="icon-box BoxOne">
               <div class="icon"><i class="fas fa-heart-broken"></i></div>
               <h4>Infidelidades</h4>
-              <p>¿Sospechas de una infidelidad? Obtén la verdad que necesitas. Nuestras investigaciones discretas te brindarán las respuestas que buscas.</p>
+              <p>¿Sospechas de una infidelidad? Obtén la verdad que necesitas. Nuestras investigaciones discretas te
+                brindarán las respuestas que buscas.</p>
             </div>
 
             <dialog id="dialogOne">
               <img src="assets/img/perro.webp" alt="Descripción de la imagen">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum recusandae dolore quas vel, dignissimos
                 unde culpa.</p>
-              <a href="https://www.google.com" target="_blank"
-                style="background-color: blue; color: white; padding: 10px 10px; text-decoration: none;">Ir a Google</a>
-              <button class="closeDialog">Close dialog</button>
+              <div style="text-align: center;"><a href="https://www.google.com" target="_blank"
+                  style="background-color: blue; color: white; padding: 10px 10px; text-decoration: none;">Ir a
+                  Google</a></div> <button class="closeDialog">Close dialog</button>
             </dialog>
           </div>
 
@@ -302,7 +320,8 @@
             <div class="icon-box BoxTwo">
               <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
               <h4>Deudores Por Alimentos</h4>
-              <p>No permitas que te defrauden. Localizamos a deudores alimentarios y te ayudamos a hacer valer tus derechos.</p>
+              <p>No permitas que te defrauden. Localizamos a deudores alimentarios y te ayudamos a hacer valer tus
+                derechos.</p>
             </div>
 
             <dialog id="dialogTwo">
@@ -317,7 +336,8 @@
             <div class="icon-box BoxThree">
               <div class="icon"><i class="fas fa-car-crash"></i></div>
               <h4>Ubicar Vehículos</h4>
-              <p>¿Tu vehículo ha desaparecido? No te preocupes, te ayudamos a encontrarlo. Contamos con tecnología de punta para localizar tu auto de manera rápida y segura.</p>
+              <p>¿Tu vehículo ha desaparecido? No te preocupes, te ayudamos a encontrarlo. Contamos con tecnología de
+                punta para localizar tu auto de manera rápida y segura.</p>
             </div>
 
             <dialog id="dialogThree">
@@ -332,7 +352,8 @@
             <div class="icon-box BoxFour">
               <div class="icon"><i class="fas fa-user-secret"></i></div>
               <h4>Estafadores</h4>
-              <p>No te dejes engañar. Identificamos y localizamos a estafadores para que puedas recuperar lo perdido.</p>
+              <p>No te dejes engañar. Identificamos y localizamos a estafadores para que puedas recuperar lo perdido.
+              </p>
             </div>
 
             <dialog id="dialogFour">
@@ -347,12 +368,14 @@
             <div class="icon-box BoxFive">
               <div class="icon"><i class="fas fa-laptop"></i></div>
               <h4>Delitos Infortmáticos</h4>
-              <p>Protege tu información confidencial. Detectamos y prevenimos delitos informáticos que puedan afectar tu empresa o tu vida personal.</p>
+              <p>Protege tu información confidencial. Detectamos y prevenimos delitos informáticos que puedan afectar tu
+                empresa o tu vida personal.</p>
             </div>
 
             <dialog id="dialogFive">
               <img src="assets/img/perro.webp" alt="Descripción de la imagen">
-              <p>Protege tu información confidencial. Detectamos y prevenimos delitos informáticos que puedan afectar tu empresa o tu vida personal.</p>
+              <p>Protege tu información confidencial. Detectamos y prevenimos delitos informáticos que puedan afectar tu
+                empresa o tu vida personal.</p>
               <button class="closeDialog">Close dialog</button>
             </dialog>
           </div>
@@ -361,7 +384,8 @@
             <div class="icon-box BoxSix">
               <div class="icon"><i class="fas fa-city"></i></div>
               <h4>Robo sistemático en empresas</h4>
-              <p>Protege tu patrimonio empresarial. Nuestras investigaciones te ayudarán a recuperar lo perdido y a prevenir futuros robos.</p>
+              <p>Protege tu patrimonio empresarial. Nuestras investigaciones te ayudarán a recuperar lo perdido y a
+                prevenir futuros robos.</p>
             </div>
 
             <dialog id="dialogSix">
@@ -603,7 +627,8 @@
         <div class="text-center">
           <h3>Llamanos Ahora y Cuentanos Tu Caso</h3>
           <p>Reconectamos los lazos del corazón. Buscamos y reunimos a familias y amigos separados por el tiempo y la
-            distancia, en cualquier rincón del país y en las tierras donde se habla <b>inglés</b> e <b>italiano</b> .</p>
+            distancia, en cualquier rincón del país y en las tierras donde se habla <b>inglés</b> e <b>italiano</b> .
+          </p>
           <a class="cta-btn scrollto" href="#contact">Registre Su Caso</a>
         </div>
 
@@ -1784,7 +1809,7 @@
   <!-- Initialize Components -->
   <script>
     // Document Ready Handler
-    $(function() {
+    $(function () {
       // Hide preloader
       setTimeout(() => {
         $('.centrado').hide('fast');
@@ -1806,4 +1831,5 @@
     });
   </script>
 </body>
+
 </html>
