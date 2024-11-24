@@ -1039,7 +1039,7 @@ section {
 .contact .info {
   border-top: 3px solid #16df7e;
   border-bottom: 3px solid #16df7e;
-  padding: 30px;
+  padding: 40px 0px 0px 19px;
   width: 100%;
   background-color: #f9f9fa;
 }
@@ -1075,7 +1075,7 @@ section {
   color: #5f687b;
 }
 
-.contact .info p {
+.contact .info p, .contact .info a {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 17px;
