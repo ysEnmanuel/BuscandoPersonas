@@ -776,6 +776,7 @@ section {
   border-radius: 25px;
   border: 2px solid #cdd1d9;
   cursor: pointer;
+  color: var(--text-color);
 }
 
 .services .icon-box .icon {
@@ -815,7 +816,11 @@ section {
 }
 
 .services .icon-box:hover h4 {
-  color: #16df7e;
+  color: #16df48;
+}
+
+.services .icon-box a {
+  color: #5f687b;
 }
 
 /*--------------------------------------------------------------
