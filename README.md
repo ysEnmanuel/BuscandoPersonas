@@ -60,4 +60,4 @@ Copyright © BuscandoPersonas.Org 2002 - 2025. All rights reserved.
 
 ## 🎨 Design Credits
 
-Designed by [Enmanuel](https://ysenmanuel.github.io/Web/)
+Designed by [Enmanuel](https://ysenmanuel.github.io)
