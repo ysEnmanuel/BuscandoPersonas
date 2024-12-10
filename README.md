@@ -46,7 +46,7 @@ A professional investigation service website dedicated to helping people find an
 
 ## 📱 Contact
 
-- Phone: +51 999934443 / 936898339
+- Phone: +51 999934443
 - Email: contacto@buscandopersonas.org
 - Website: https://buscandopersonas.org
 
