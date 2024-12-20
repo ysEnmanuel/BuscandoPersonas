@@ -11,7 +11,6 @@ A professional investigation service website dedicated to helping people find an
 - **Testimonials**: Client testimonials carousel
 - **Multi-language Support**: Services available in English, Spanish, and Italian
 - **WhatsApp Integration**: Direct contact through WhatsApp
-- **Facebook Integration**: Facebook Messenger chat integration
 
 ## 🛠️ Technologies Used
 
@@ -40,7 +39,6 @@ A professional investigation service website dedicated to helping people find an
 1. Clone the repository
 2. Open index.html in your browser
 3. Configure the following integrations:
-   - Facebook Messenger (Update page_id in index.html)
    - WhatsApp contact number
    - JotForm contact form
 

@@ -73,33 +73,6 @@
     <div class="loader">buscandopersonas.org</div>
   </div>
   <div id="WAButton"></div>
-  <!-- Facebook Integration -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v9.0'
-      });
-    };
-
-    // Load Facebook SDK asynchronously
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-      js.async = true;
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <div class="fb-customerchat" attribution="setup_tool" page_id="354337154593213" theme_color="#16df7e"
-    logged_in_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?"
-    logged_out_greeting="Gracias por visitarnos  ¿Podemos ayudarte con algun caso?">
-  </div>
-
   <!-- ======= Header ======= -->
 
   <header id="header" class="fixed-top">
@@ -1718,9 +1691,6 @@
                 rel="stylesheet" />
               <script type="text/javascript">
                 window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"
-              </script>
-              <script type="text/javascript">
-                window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"
               </script>
               <script>
                 window.JotFormAPIEndpoint = "https://api.jotform.com";
